@@ -1,4 +1,4 @@
-# Super Cool Project! - Installation Guide and API
+# Student group manager  - Installation Guide and API
 
 ## 🚀 Getting Started
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion des Étudiants</title>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">Accueil</a>
+    <h1>Gestion des étudiants</h1>
+  </header>
+
+  <section id="createZone">
+    <h2>Ajouter un étudiant</h2>
+    <input type="text" id="name" placeholder="Nom" />
+    <input type="text" id="firstnames" placeholder="Prénom(s)" />
+    <input type="text" id="number" placeholder="Numéro étudiant" />
+    <button id="createUpdate">Créer</button>
+    <button id="clear">Vider</button>
+  </section>
+
+  <section id="allstudents">
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prénom(s)</th>
+          <th>Numéro étudiant</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="studentTable">
+      </tbody>
+    </table>
+  </section>
+
+
+  <div id="message-container"></div>
+  <script src="javascripts/students.js"></script>
+</body>
+
+
+</html>
+
+

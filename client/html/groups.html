@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestion des Groupes</title>
+  <link rel="stylesheet" href="/style/style.css">
+  <style>
+    .groups-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      padding: 20px;
+    }
+
+    .student-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .student-table th, 
+    .student-table td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    .group-list {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .group-tag {
+      display: block;
+      padding: 10px;
+      margin: 5px 0;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .group-tag:hover {
+      background-color: #e6f3ff;
+    }
+
+    .group-options {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+
+    .group-option {
+      padding: 4px 8px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Accueil</a>
+    <h1>Gestion des groupes</h1>
+  </header>
+
+  <div class="groups-container">
+    <div class="ungrouped-section">
+      <h2 id="currentGroupTitle"></h2>
+      <table class="student-table">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prénom(s)</th>
+            <th>Numéro</th>
+            <th>Groupes disponibles</th>
+          </tr>
+        </thead>
+        <tbody id="ungroupedStudents">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-list">
+      <h2>Groupes existants</h2>
+      <div class="group-tags">
+        <div class="group-tag" data-group="none">Aucun groupe</div>
+        <div class="group-tag" data-group="1">Groupe 1</div>
+        <div class="group-tag" data-group="2">Groupe 2</div>
+        <div class="group-tag" data-group="3">Groupe 3</div>
+        <div class="group-tag" data-group="4">Groupe 4</div>
+        <div class="group-tag" data-group="5">Groupe 5</div>
+        <div class="group-tag" data-group="6">Groupe 6</div>
+      </div>
+    </div>
+  </div>
+  <div id="message-container" class="message-container"></div>
+  <script src="javascripts/groups.js"></script>
+</body>
+</html>
